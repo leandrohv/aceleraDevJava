@@ -14,6 +14,11 @@ public class ListaTarefas {
         }
     }
 
+    public void adicionar(String descricao){
+        Tarefa tarefa = new Tarefa(descricao);
+        adicionar(tarefa);
+    }
+
     public void remover(int posicao){
         if(posicao < this.tarefas.size()){
             this.tarefas.remove(posicao);
