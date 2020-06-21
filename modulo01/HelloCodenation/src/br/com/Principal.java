@@ -1,5 +1,6 @@
 package br.com;
 
+import br.com.tarefas.ArrayTarefas;
 import br.com.tarefas.Tarefa;
 
 public class Principal {
@@ -10,8 +11,14 @@ public class Principal {
 
         System.out.println("Minhas tarefas");
         System.out.println("------------------");
-        Tarefa tarefa = new Tarefa("Regar as plantas");
-        tarefa.exibirTarefa();
-        System.out.println("\nA tarefa tem " + tarefa.obterTamanhoTarefa() + " caracteres.");
+
+        ArrayTarefas tarefas = new ArrayTarefas(3);
+        Tarefa tarefa1 = new Tarefa("Regar as plantas");
+        tarefa1.exibirTarefa();
+        Tarefa tarefa2 = new Tarefa("Estudar");
+        tarefa2.exibirTarefa();
+        Tarefa tarefa3 = new Tarefa("Trabalhar");
+        tarefa3.exibirTarefa();
+
     }
 }
