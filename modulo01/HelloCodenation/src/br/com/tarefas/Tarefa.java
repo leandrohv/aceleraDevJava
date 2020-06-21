@@ -8,7 +8,7 @@ public class Tarefa {
     }
 
     public void exibirTarefa(){
-     System.out.print("Tarefa: " + this.descricao);
+     System.out.print("Tarefa: " + this.descricao + "\n");
     }
 
     public int obterTamanhoTarefa(){

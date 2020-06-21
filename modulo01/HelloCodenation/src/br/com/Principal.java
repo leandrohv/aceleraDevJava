@@ -14,11 +14,12 @@ public class Principal {
 
         ArrayTarefas tarefas = new ArrayTarefas(3);
         Tarefa tarefa1 = new Tarefa("Regar as plantas");
-        tarefa1.exibirTarefa();
         Tarefa tarefa2 = new Tarefa("Estudar");
-        tarefa2.exibirTarefa();
         Tarefa tarefa3 = new Tarefa("Trabalhar");
-        tarefa3.exibirTarefa();
+        tarefas.adicionar(tarefa1);
+        tarefas.adicionar(tarefa2);
+        tarefas.adicionar(tarefa3);
+        tarefas.listar();
 
     }
 }
