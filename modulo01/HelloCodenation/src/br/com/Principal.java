@@ -29,15 +29,28 @@ public class Principal {
 
         ListaTarefas listaTarefas = new ListaTarefas();
 
-        Tarefa tarefa4 = new Tarefa("Regar as plantas 1");
+        Tarefa tarefa4 = new Tarefa("Regar as plantas");
         Tarefa tarefa5 = new Tarefa("Estudar 2");
         Tarefa tarefa6 = new Tarefa("Trabalhar 3");
 
         listaTarefas.adicionar(tarefa4);
         listaTarefas.adicionar(tarefa5);
         listaTarefas.adicionar(tarefa6);
-        
+
         listaTarefas.listar();
+
+        listaTarefas.remover(1);
+
+        System.out.println("\nMinhas tarefas após remover");
+        System.out.println("------------------");
+
+        listaTarefas.listar();
+
+        System.out.println("\nBuscar tarefa");
+        System.out.println("------------------");
+        listaTarefas.buscar("Trabalhar 3");
+        listaTarefas.listar();
+
 
     }
 }

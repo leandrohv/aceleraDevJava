@@ -1,6 +1,6 @@
-package br.com.metodos;
+package br.com.metodos.operadores;
 
-public class Calculadora {
+public class OperadoresMatematicos {
 
     public int soma(int n1, int n2) { return n1 + n2; }
 
@@ -12,7 +12,11 @@ public class Calculadora {
 
     public int resto(int n1, int n2) { return n1 % n2; }
 
-    public void incremento (int n1) { n1*=10; }
+    public void incremento (int n1) {
+        n1++;
+        ++n1;
+        n1+=2;
+    }
 
     public void decremento (int n1) {
         n1--;
